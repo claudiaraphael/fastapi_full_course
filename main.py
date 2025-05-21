@@ -9,4 +9,8 @@ app = FastAPI()
 
 @app.get('/')
 def home():
-    return {'Data': 'Test'}
+    return {'Data': 'Testing'}
+
+@app.post('/create')
+def create():
+    return{'Data': 'Created'}
